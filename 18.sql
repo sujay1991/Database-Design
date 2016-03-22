@@ -1,0 +1,1 @@
+select album.album_id,artist.artist_id,album_name,artist_name from album,artist,album_artist where album.album_id=album_artist.album_id and artist.artist_id=album_artist.artist_id;

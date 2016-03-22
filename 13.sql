@@ -1,0 +1,1 @@
+select avg(price),disktype from my_collection group by disktype;

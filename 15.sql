@@ -1,0 +1,1 @@
+select price,album.album_id,album_name,alcond from album,my_collection where album.album_id=my_collection.album_id and (price=(select min(price) from my_collection)) and alcond like 'mint';

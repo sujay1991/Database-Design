@@ -1,0 +1,1 @@
+select count(album.album_id),album_name,recorddate from album,my_collection where album.album_id=my_collection.album_id and alcond like 'mint' group by recorddate;

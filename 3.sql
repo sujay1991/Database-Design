@@ -1,0 +1,1 @@
+ select distinct album.album_id,album_name from my_collection,album where album.album_id=my_collection.album_id;

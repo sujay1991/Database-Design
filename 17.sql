@@ -1,0 +1,1 @@
+select album.album_id,album_name,artist.artist_id,artist_name from my_collection,album,artist,album_artist where album.album_id=my_collection.album_id and album.album_id=album_artist.album_id and artist.artist_id=album_artist.artist_id and artist_name is null;

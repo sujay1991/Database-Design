@@ -1,0 +1,1 @@
+select album.album_id,genre.genre_id,genre,price from genre,album_genre,album,my_collection where album.album_id=my_collection.album_id and album.album_id=album_genre.album_id and genre.genre_id=album_genre.genre_id group by genre having max(price) ;

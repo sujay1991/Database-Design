@@ -1,0 +1,1 @@
+select album_name,album.album_id,alcond from album,my_collection where album.album_id=my_collection.album_id;

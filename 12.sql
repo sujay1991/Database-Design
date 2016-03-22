@@ -1,0 +1,1 @@
+select album.album_id,album_name,alcond,rating,disktype from album,my_collection where album.album_id=my_collection.album_id and disktype like 'vinyl'having alcond like'mint' order by rating desc limit 5;
